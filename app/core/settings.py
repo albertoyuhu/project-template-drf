@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
     # Project
+    "apps.users",
 ]
 
 # Middleware
@@ -145,6 +146,7 @@ STATIC_ROOT = "/vol/web/static"
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+AUTH_USER_MODEL = "users.User"
 
 # Storage
 DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
